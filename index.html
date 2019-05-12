@@ -9,6 +9,7 @@
 <body>
     <form id="new-item-form" class="pure-form pure-form-stacked">
       <div id="form-wrapper">
+        <p>New Deity:</p>
         <div class="form-item">
           <label for="name" class="primary">Name: </label>
           <input type="text" id="name" required/>
@@ -50,12 +51,14 @@
           </div>
         </div>
       </div>
-      <input type="submit" value="save"/>
+      <div class="submit-button">
+        <input type="submit" value="save"/>
+      </div>
     </form>
 
     <button id="delete-all">Delete All</button>
 
-    <h1 id="title">Pantheon List</h1>
+    <h1 id="title">The Pantheon:</h1>
     <ul id="pantheon-list"></ul>
   </body>
 </html>

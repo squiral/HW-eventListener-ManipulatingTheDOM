@@ -36,6 +36,10 @@ const createPantheonListItem = function (form) {
   domain.textContent = `Domain: ${form.domain.value}`;
   pantheonListItem.appendChild(domain);
 
+  const generation = document.createElement('p');
+  generation.textContent = form.generation.value;
+  pantheonListItem.appendChild(generation);
+
   return pantheonListItem;
 }
 
