@@ -1,4 +1,7 @@
+body {
+  margin: 50px;
 
+}
 
 #pantheon-list {
   display: flex;
@@ -6,13 +9,93 @@
   list-style-type: none;
 }
 
+#new-item-form {
+  padding: 30px;
+  margin: 20px;
+  width: 250px;
+  font-family: "Proxima Soft", Futura;
+  display: flex;
+  flex-direction: column;
+  background-color: #94AE89;
+  color: white;
+  border-radius: 30px;
 
+}
+
+#title {
+  font-family: "Proxima Soft", Futura;
+  margin-left: 20px;
+}
+
+#delete-all {
+  margin-left: 20px;
+}
+
+.form-item {
+   margin-bottom: 10px;
+   width: 250px;
+   display: flex;
+   justify-content: space-between;
+}
+
+input[type="submit"] {
+  width: 50px;
+  justify-content: center;
+}
 
 
 .pantheon-list-item {
-  margin: 0.5rem 0.5rem;
-  padding: 0.5rem 0.8rem;
-  border: 1px solid #20437c;
-  border-radius: 5%;
+  border-radius: 30px;
+  margin-right: 20px;
+  padding: 30px;
+  width: 260px;
+  border: none;
   background: #ddeaff;
+  color: white;
+  font-family: "Proxima Soft", Futura;
+}
+
+.sky {
+  background: #6B818C;
+}
+
+.war {
+  background: #CC2936;
+}
+
+.underworld {
+  background: #63585E;
+}
+
+.hearth {
+  background: #F1BF98;
+}
+
+.ocean {
+  background: #08415C;
+}
+
+.sun {
+  background: #63585E;
+}
+
+.earth {
+  background: #63585E;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+p {
+  margin: 10px 0px;
+  font-size: 25px;
 }
