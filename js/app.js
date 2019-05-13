@@ -38,6 +38,7 @@ const createPantheonListItem = function (form) {
 
   const generation = document.createElement('p');
   generation.textContent = form.generation.value;
+  generation.id = `${form.generation.value}-p`;
   pantheonListItem.appendChild(generation);
 
   return pantheonListItem;

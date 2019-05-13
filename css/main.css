@@ -160,28 +160,66 @@ input[type=submit]:hover {
   border-radius: 20px;
 }
 
+#Olympian-p {
+  width: 110px;
+  margin: 0px;
+  background-color: #EAC435;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
 #olympian {
   border-color: #EAC435;
   border-style: solid;
   border-width: 8px;
 }
 
+#titan {
+  border-color: #CC2936;
+  border-style: solid;
+  border-width: 8px;
+}
+
 #titan h2 {
   padding: 15px 20px;
-  background-color: white;
-  border-radius: 20px
+  background-color: #CC2936;
+  border-radius: 20px;
+  color: white;
+}
+
+#Titan-p {
+  width: 60px;
+  margin: 0px;
+  background-color: #CC2936;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 #primordial {
-  border-color: #607466;
+  border-color: #BFBFBF;
   border-style: solid;
   border-width: 8px;
 }
 
 #primordial h2 {
   padding: 15px 20px;
-  background-color: white;
+  background-color: #BFBFBF;
   border-radius: 20px;
+  color: white;
+}
+
+#Primordial-p {
+  width: 120px;
+  margin: 0px;
+  background-color: #BFBFBF;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 
