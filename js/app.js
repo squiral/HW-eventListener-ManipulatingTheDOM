@@ -22,7 +22,7 @@ const createPantheonListItem = function (form) {
   const pantheonListItem = document.createElement('li');
   pantheonListItem.classList.add('pantheon-list-item');
   pantheonListItem.classList.add(`${form.domain.value.toLowerCase()}`)
-  generationStyle(pantheonListItem, form.generation.value);
+  pantheonListItem.id = `${form.generation.value.toLowerCase()}`
 
   const name = document.createElement('h2');
   name.textContent = form.name.value;
@@ -49,16 +49,16 @@ const handleDeleteClick = function (event) {
   pantheonList.innerHTML = '';
 }
 
-const generationStyle = function (element, value) {
-  switch (value) {
-    case 'Primordial':
-    element.id = 'primordial';
-    break;
-    case 'Titan':
-    element.id = 'titan';
-    break;
-    case 'Olympian':
-    element.id = 'olympian';
-    break;
-  }
-}
+// const generationStyle = function (element, value) {
+//   switch (value) {
+//     case 'Primordial':
+//     element.id = 'primordial';
+//     break;
+//     case 'Titan':
+//     element.id = 'titan';
+//     break;
+//     case 'Olympian':
+//     element.id = 'olympian';
+//     break;
+//   }
+// }
