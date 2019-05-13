@@ -21,7 +21,7 @@ const handleFormSubmit = function (event) {
 const createPantheonListItem = function (form) {
   const pantheonListItem = document.createElement('li');
   pantheonListItem.classList.add('pantheon-list-item');
-  domainColour(pantheonListItem, form.domain.value);
+  pantheonListItem.classList.add(`${form.domain.value.toLowerCase()}`)
   generationStyle(pantheonListItem, form.generation.value);
 
   const name = document.createElement('h2');
@@ -47,32 +47,6 @@ const createPantheonListItem = function (form) {
 const handleDeleteClick = function (event) {
   const pantheonList = document.querySelector('#pantheon-list');
   pantheonList.innerHTML = '';
-}
-
-const domainColour = function (element, value) {
-  switch (value) {
-    case 'Sky':
-    element.classList.add('sky');
-    break;
-    case 'War':
-    element.classList.add('war');
-    break;
-    case 'Hearth':
-    element.classList.add('hearth');
-    break;
-    case 'Ocean':
-    element.classList.add('ocean');
-    break;
-    case 'Underworld':
-    element.classList.add('underworld');
-    break;
-    case 'Sun':
-    element.classList.add('sun');
-    break;
-    case 'Earth':
-    element.classList.add('earth');
-    break;
-  }
 }
 
 const generationStyle = function (element, value) {

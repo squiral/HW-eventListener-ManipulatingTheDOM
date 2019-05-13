@@ -131,6 +131,10 @@ input[type=submit]:hover {
   background: #CC2936;
 }
 
+.magic {
+  background: #AC80A0;
+}
+
 .underworld {
   background: #63585E;
 }
