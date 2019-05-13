@@ -17,7 +17,6 @@ const handleFormSubmit = function (event) {
   event.target.reset();
 }
 
-
 const createPantheonListItem = function (form) {
   const pantheonListItem = document.createElement('li');
   pantheonListItem.classList.add('pantheon-list-item');
@@ -38,7 +37,7 @@ const createPantheonListItem = function (form) {
 
   const generation = document.createElement('p');
   generation.textContent = form.generation.value;
-  generation.id = `${form.generation.value}-p`;
+  generation.id = `${form.generation.value.toLowerCase()}-p`;
   pantheonListItem.appendChild(generation);
 
   return pantheonListItem;

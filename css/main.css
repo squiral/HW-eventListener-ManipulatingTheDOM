@@ -59,6 +59,7 @@ body {
 }
 
 .radio-choice {
+  width: 100px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
